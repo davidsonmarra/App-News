@@ -1,0 +1,1 @@
+export { ITheme } from "./theme";

@@ -13,7 +13,20 @@
   RCT_EXPORT_MODULE(WhiteLabelConfig);
  
   RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getAppName) {
-    return @"Daily Bungle";
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+  }
+
+  - (NSDictionary *)constantsToExport {
+    return @{
+      @"theme": @{
+        @"background": @"#2c292e",
+        @"primary": @"#a92621"
+      }
+    };
+  }
+
+  + (BOOL)requiresMainQueueSetup {
+    return YES;
   }
 
 @end

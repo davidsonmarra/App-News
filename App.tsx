@@ -1,22 +1,36 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import "./environments";
+
+import { StatusBar } from "expo-status-bar";
+import { ImageBackground, SafeAreaView, StyleSheet, Text } from "react-native";
 import WhiteLabelConfig from "./modules/WhiteLabelConfig";
+import { Hero, Logo } from "@assets";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{WhiteLabelConfig.APP_NAME}</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ImageBackground style={styles.hero} source={Hero}>
+      <SafeAreaView style={styles.container}>
+        <Logo width={250} height={200} />
+        <Text style={styles.text}>{WhiteLabelConfig.APP_NAME}</Text>
+        <StatusBar style="light" translucent />
+      </SafeAreaView>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
+  hero: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    justifyContent: "space-between",
     alignItems: "center",
-    justifyContent: "center",
+    paddingVertical: 16,
+  },
+  text: {
+    color: WhiteLabelConfig.THEME.primary,
   },
 });

@@ -13,7 +13,20 @@
   RCT_EXPORT_MODULE(WhiteLabelConfig);
  
   RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getAppName) {
-    return @"Daily Planet";
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+  }
+
+  - (NSDictionary *)constantsToExport {
+    return @{
+      @"theme": @{
+        @"background": @"#f3f8fe",
+        @"primary": @"#8db5d7"
+      }
+    };
+  }
+
+  + (BOOL)requiresMainQueueSetup {
+    return YES;
   }
 
 @end
