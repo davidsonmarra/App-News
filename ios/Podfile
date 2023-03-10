@@ -37,7 +37,7 @@ elsif podfile_properties.key?('ios.flipper') then
   end
 end
 
-target 'whiteLabelNews' do
+target 'DailyBugle' do
   use_expo_modules!
   config = use_native_modules!
 
@@ -78,6 +78,8 @@ target 'whiteLabelNews' do
       end
     end
   end
+
+  target 'DailyPlanet'
 
   post_integrate do |installer|
     begin
