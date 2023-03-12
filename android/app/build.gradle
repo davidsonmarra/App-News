@@ -152,12 +152,12 @@ android {
     }
     flavorDimensions "whitelabelnews"
     productFlavors {
-        dailybugle {
+        dailyBugle {
             dimension "whitelabelnews"
             applicationIdSuffix ".dailybugle"
             resValue "string", "white_label_app_name", "Daily Bugle"
         }
-        dailyplanet {
+        dailyPlanet {
             dimension "whitelabelnews"
             applicationIdSuffix ".dailyplanet"
             resValue "string", "white_label_app_name", "Daily Planet"
