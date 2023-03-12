@@ -2,18 +2,31 @@ import React from "react";
 import "./environments";
 
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground, SafeAreaView, StyleSheet, Text } from "react-native";
+import {
+  ImageBackground,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import WhiteLabelConfig from "./modules/WhiteLabelConfig";
 import { Hero, Logo } from "@assets";
+import { Button } from "@components";
 
 export default function App() {
   return (
     <ImageBackground style={styles.hero} source={Hero}>
-      <SafeAreaView style={styles.container}>
-        <Logo width={250} height={200} />
-        <Text style={styles.text}>{WhiteLabelConfig.APP_NAME}</Text>
-        <StatusBar style="light" translucent />
-      </SafeAreaView>
+      <View style={styles.container}>
+        <SafeAreaView style={styles.wrapper}>
+          <Logo width={250} height={200} />
+          <Text style={styles.title}>
+            Welcome to {WhiteLabelConfig.APP_NAME}, your go-to app for the
+            latest news and updates from around the world.
+          </Text>
+          <Button />
+          <StatusBar style="light" translucent />
+        </SafeAreaView>
+      </View>
     </ImageBackground>
   );
 }
@@ -26,11 +39,17 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor: WhiteLabelConfig.THEME.brightness,
+  },
+  wrapper: {
+    flex: 1,
     justifyContent: "space-between",
     alignItems: "center",
     paddingVertical: 16,
   },
-  text: {
-    color: WhiteLabelConfig.THEME.primary,
+  title: {
+    width: "75%",
+    fontSize: 24,
+    color: WhiteLabelConfig.THEME.heroTitle,
   },
 });

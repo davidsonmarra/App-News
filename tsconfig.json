@@ -1,11 +1,13 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "typeRoots": ["./src/types"],
+    "typeRoots": ["./types"],
     "baseUrl": ".",
     "paths": {
       "@assets": ["./src/assets"],
-      "@assetsBrand": ["./src/assets/DailyBugle"]
+      "@assetsBrand": ["./src/assets/DailyBugle"],
+      "@components": ["./src/components"],
+      "@modules": ["./modules"]
     }
   }
 }

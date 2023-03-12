@@ -6,7 +6,12 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "start:reset-cache": "react-native start --reset-cache",
+    "android:daily-bugle": "cp env.DailyBugle.json env.json && react-native run-android --variant 'dailyBugleDebug' --appIdSuffix 'dailybugle'",
+    "android:daily-planet": "cp env.DailyPlanet.json env.json && npx react-native run-android --variant 'dailyPlanetDebug' --appIdSuffix 'dailyplanet'",
+    "ios:daily-bugle": "cp env.DailyBugle.json env.json && react-native run-ios --scheme 'DailyBugle'",
+    "ios:daily-planet": "cp env.DailyPlanet.json env.json && react-native run-ios --scheme 'DailyPlanet'"
   },
   "dependencies": {
     "@types/react": "~18.0.27",

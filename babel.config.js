@@ -13,9 +13,10 @@ module.exports = function (api) {
           imageTypes: [".png", ".gif", ".jpg", ".jpeg"],
           alias: {
             "@": "./src",
-            "@genericComponents": "./src/components",
             "@assets": `./src/assets`,
             "@assetsBrand": `./src/assets/${BRAND}`,
+            "@components": "./src/components",
+            "@modules": "./modules",
           },
         },
       ],

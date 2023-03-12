@@ -20,7 +20,10 @@
     return @{
       @"theme": @{
         @"background": @"#2c292e",
-        @"primary": @"#a92621"
+        @"primary": @"#a92621",
+        @"title": @"#1c1c1c",
+        @"heroTitle": @"#f1f1f1",
+        @"brightness": @"rgba(0, 0, 0, 0.5)"
       }
     };
   }
