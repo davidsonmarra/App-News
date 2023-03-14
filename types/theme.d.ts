@@ -6,4 +6,5 @@ export interface ITheme {
   text: string;
   heroTitle: string;
   brightness: string;
+  cardBackground: string;
 }

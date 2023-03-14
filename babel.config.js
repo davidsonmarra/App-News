@@ -1,4 +1,5 @@
 const { BRAND } = require("./env.json");
+const getLocalModuleConfig = require("./utils/get-local-module-config");
 
 module.exports = function (api) {
   api.cache(true);
@@ -17,6 +18,9 @@ module.exports = function (api) {
             "@assetsBrand": `./src/assets/${BRAND}`,
             "@components": "./src/components",
             "@modules": "./modules",
+            "@routes": "./src/routes",
+            "@pages": "./src/pages",
+            ...getLocalModuleConfig(),
           },
         },
       ],

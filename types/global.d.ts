@@ -1,1 +1,2 @@
-declare var BRAND: string;
+declare var BRAND: "DailyBugle" | "DailyPlanet";
+declare var API_KEY: string;

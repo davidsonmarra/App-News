@@ -7,7 +7,9 @@
       "@assets": ["./src/assets"],
       "@assetsBrand": ["./src/assets/DailyBugle"],
       "@components": ["./src/components"],
-      "@modules": ["./modules"]
+      "@modules": ["./modules"],
+      "@routes": ["./src/routes"],
+      "@pages": ["./src/pages"]
     }
   }
 }

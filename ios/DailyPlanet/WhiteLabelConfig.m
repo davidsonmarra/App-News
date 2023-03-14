@@ -21,10 +21,13 @@
       @"theme": @{
         @"background": @"#f3f8fe",
         @"primary": @"#8db5d7",
-        @"title": @"#f1f1f1",
+        @"secondary": @"#fee344",
+        @"title": @"#1c1c1c",
         @"heroTitle": @"#f1f1f1",
-        @"brightness": @"rgba(0, 0, 0, 0.5)"
-      }
+        @"brightness": @"rgba(0, 0, 0, 0.7)",
+        @"cardBackground": @"#1c1c1c33"
+      },
+      @"searchHero": @"superman"
     };
   }
 
