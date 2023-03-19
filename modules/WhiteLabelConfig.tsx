@@ -1,5 +1,5 @@
 import { NativeModules } from "react-native";
-import { ITheme } from "../types";
+import { ITheme } from "@types";
 
 export default class WhiteLabelConfig {
   public static readonly APP_NAME: string =

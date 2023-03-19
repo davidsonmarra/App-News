@@ -20,6 +20,7 @@ module.exports = function (api) {
             "@modules": "./modules",
             "@routes": "./src/routes",
             "@pages": "./src/pages",
+            "@types": "./types",
             ...getLocalModuleConfig(),
           },
         },

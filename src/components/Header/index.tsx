@@ -5,7 +5,7 @@ import { Logo } from "@assets";
 import { FontAwesome } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Input } from "../Input";
-import { IFormSearch } from "../../../types";
+import { IFormSearch } from "@types";
 import { Control } from "react-hook-form";
 
 interface Props {

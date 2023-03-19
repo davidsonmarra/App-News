@@ -7585,10 +7585,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-whitelabelnews-state-manager@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/whitelabelnews-state-manager/-/whitelabelnews-state-manager-1.0.6.tgz#a7243c45539fb12aa279d236c643bb64396b63bc"
-  integrity sha512-vm8NL495rS7LijlRbwT5c+9ZC2LRF0sBZVvyNQr91BwlXqeWuBKweKDzsoauypkEaHSk1lsEzSNS4NirfiUQ/A==
+whitelabelnews-state-manager@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/whitelabelnews-state-manager/-/whitelabelnews-state-manager-1.0.7.tgz#b793467d9a29ea16b1d3325f9a5dc19241472347"
+  integrity sha512-g23/j0xrTkX6dWcY9sJ2l4nncvYfanuull32SFdCPgxo4XAgrh62kwfAhNp5oHpKBsQvA+TVC+abm8uhHiNzcg==
 
 wonka@^4.0.14:
   version "4.0.15"

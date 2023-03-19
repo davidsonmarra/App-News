@@ -1,16 +1,27 @@
 import React, { memo } from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
-import { NewsDTO } from "../../../types";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { NewsDTO } from "@types";
 import { WhiteLabelConfig } from "@modules";
+import { NavigationProp, useNavigation } from "@react-navigation/native";
+import { RootStackParamList } from "@routes";
 
 interface Props {
   data: NewsDTO;
-  handleGoToNewsDetails: (newData: NewsDTO) => void;
 }
 
 const CardNewComponent = ({ data }: Props) => {
+  const { navigate } =
+    useNavigation<NavigationProp<RootStackParamList, "News">>();
+
+  const handleNavigateToNewDetails = () => {
+    navigate("NewDetails", { newData: data });
+  };
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      onPress={handleNavigateToNewDetails}
+      style={styles.container}
+    >
       <View style={styles.wrapper}>
         <View style={styles.imageWrapper}>
           <Image
@@ -28,7 +39,7 @@ const CardNewComponent = ({ data }: Props) => {
           </Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

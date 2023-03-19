@@ -1,10 +1,6 @@
+import { WhiteLabelConfig } from "@modules";
 import React from "react";
-import {
-  Control,
-  Controller,
-  FieldError,
-  FieldErrorsImpl,
-} from "react-hook-form";
+import { Control, Controller } from "react-hook-form";
 import { StyleSheet, TextInput, TextInputProps } from "react-native";
 import { IFormSearch } from "types";
 
@@ -39,5 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 8,
     fontSize: 16,
+    color: WhiteLabelConfig.THEME.title,
+    fontWeight: "bold",
   },
 });

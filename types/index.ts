@@ -6,11 +6,14 @@ export interface NewsDTO {
   description: string;
   urlToImage: string;
   publishedAt: Date;
+  url: string;
+  content: string;
 }
 export interface IRootState {
   news: {
     newsData: NewsDTO[];
     isEnd: boolean;
+    isLoading: boolean;
   };
 }
 

@@ -14,7 +14,7 @@ interface Props {
 export const CategoryModal = ({ language, setLanguage, onSubmit }: Props) => {
   return (
     <SafeAreaView edges={["bottom"]} style={styles().container}>
-      <Text style={styles().title}>Países</Text>
+      <Text style={styles().title}>Country</Text>
       <View style={styles().rowCategory}>
         <TouchableOpacity
           onPress={() => setLanguage("en")}
@@ -41,6 +41,7 @@ const styles = (isSelect = false) =>
     container: {
       paddingHorizontal: 24,
       paddingTop: 16,
+      paddingBottom: 12,
       backgroundColor: WhiteLabelConfig.THEME.background,
     },
     title: {

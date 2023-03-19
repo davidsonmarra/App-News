@@ -1,6 +1,6 @@
 import React from "react";
 import { RootStackParamList } from ".";
-import { Home, News } from "@pages";
+import { Home, NewDetails, News } from "@pages";
 
 interface Props {
   screenName: keyof RootStackParamList;
@@ -25,18 +25,11 @@ export const routes: Props[] = [
       gestureEnabled: false,
     },
   },
-  // {
-  //   screenName: 'SearchResults',
-  //   component: SearchResults,
-  //   options: {
-  //     gestureEnabled: false
-  //   }
-  // },
-  // {
-  //   screenName: 'HeroDetails',
-  //   component: HeroDetails,
-  //   options: {
-  //     gestureEnabled: true
-  //   }
-  // }
+  {
+    screenName: "NewDetails",
+    component: NewDetails,
+    options: {
+      gestureEnabled: true,
+    },
+  },
 ];

@@ -25,9 +25,9 @@
         @"title": @"#1c1c1c",
         @"heroTitle": @"#f1f1f1",
         @"brightness": @"rgba(0, 0, 0, 0.7)",
-        @"cardBackground": @"#1c1c1c33"
-      },
-      @"searchHero": @"superman"
+        @"cardBackground": @"#1c1c1c33",
+        @"mode": @"dark"
+      }
     };
   }
 

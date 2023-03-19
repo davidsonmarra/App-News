@@ -14,7 +14,8 @@ import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { RootStackParamList } from "@routes";
 
 export const Home = () => {
-  const { navigate } = useNavigation<NavigationProp<RootStackParamList>>();
+  const { navigate } =
+    useNavigation<NavigationProp<RootStackParamList, "Home">>();
 
   const handleStart = useCallback(() => {
     navigate("News");

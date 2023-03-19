@@ -7,4 +7,5 @@ export interface ITheme {
   heroTitle: string;
   brightness: string;
   cardBackground: string;
+  mode: "light" | "dark";
 }

@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { routes } from "./routes";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Home } from "../pages/Home";
-// import { HeroDTO } from '../DTOs/HeroDTO';
+import { NewsDTO } from "@types";
 
 export type RootStackParamList = {
   Home: undefined;
   News: undefined;
-  // SearchResults: undefined;
-  // HeroDetails: { hero: HeroDTO, index: number };
+  NewDetails: { newData: NewsDTO };
 };
 
 const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();

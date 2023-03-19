@@ -40,5 +40,6 @@ const styles = (isAlternative = false) =>
         : WhiteLabelConfig.THEME.title,
       fontSize: 16,
       fontWeight: "bold",
+      textAlign: "center",
     },
   });

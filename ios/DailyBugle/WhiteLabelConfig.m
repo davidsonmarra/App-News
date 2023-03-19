@@ -25,9 +25,9 @@
         @"title": @"#f1f1f1",
         @"heroTitle": @"#f1f1f1",
         @"brightness": @"rgba(0, 0, 0, 0.5)",
-        @"cardBackground": @"#f1f1f111"
-      },
-      @"searchHero": @"spider-man"
+        @"cardBackground": @"#f1f1f111",
+        @"mode": @"light"
+      }
     };
   }
 

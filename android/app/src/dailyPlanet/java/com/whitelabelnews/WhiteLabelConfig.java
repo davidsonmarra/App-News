@@ -52,10 +52,10 @@ public class WhiteLabelConfig extends ReactContextBaseJavaModule {
         themeMap.putString("heroTitle", "#f1f1f1");
         themeMap.putString("brightness", "rgba(0, 0, 0, 0.7)");
         themeMap.putString("cardBackground", "#1c1c1c33");
+        themeMap.putString("mode", "dark");
+
 
         constants.put("theme", themeMap);
-        constants.putString("searchHero", "superman");
-
         return constants;
     }
 }
