@@ -30,9 +30,22 @@
 </ul>
 
 <h3 id="resultado">Resultado</h3>
+<h4>Daily Bugle</h4>
 <div align="center">
+
+  https://user-images.githubusercontent.com/80720221/226476295-ee7a385f-2e5c-449d-83a3-ccfe6c0f3660.mp4
   
 </div>
+<h4>Daily Planet</h4>
+<div align="center">
+
+  https://user-images.githubusercontent.com/80720221/226476416-662a5a32-8a87-4839-abd9-c0922cac7afa.mp4
+  
+</div>
+
+
+
+
 
 <h3 id="executar">Como executar</h3>
 
